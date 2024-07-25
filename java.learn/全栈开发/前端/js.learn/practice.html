@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Practice</title>
+<script>
+// 这里可以写你的JavaScript代码来操作DOM
+function changeText() {
+    // 获取第一个段落元素并修改其内容
+    var p1 = document.getElementById('p1');
+    p1.textContent = '段落一的内容被改变了!';
+
+    // 获取第二个段落元素并修改其样式
+    var p2 = document.querySelector('#p2');
+    p2.style.color = 'red';
+}
+
+// 这个函数会在页面加载完成后执行
+function init() {
+    console.log('页面已加载完毕，可以开始操作DOM了。');
+}
+window.onload = init;
+</script>
+</head>
+<body>
+
+<h1>DOM 操作练习</h1>
+
+<button onclick="changeText()">点击我改变内容</button>
+
+<p id="p1">这是段落一。</p>
+
+<p id="p2">这是段落二。</p>
+
+</body>
+</html>
