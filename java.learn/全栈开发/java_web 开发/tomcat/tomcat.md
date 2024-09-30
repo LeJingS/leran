@@ -46,9 +46,25 @@ start & stop
 
 ### WEB项目的标准结构
 
+app:
 
+- index.html
 
-p58,太困了
+- static
+
+  - css
+  - js
+  - img
+
+- WEB-INF       不能被客户端直接访问到
+
+  - classes  字节码根路径
+
+  - lib           第三方jar包
+
+  - web.xml 项目的配置文件
+
+    
 
 
 
